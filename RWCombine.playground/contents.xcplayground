@@ -3,6 +3,8 @@
     <pages>
         <page name='firstExamples.swift'/>
         <page name='Blackjack.swift'/>
-        <page name='TransforminOperators.swift'/>
+        <page name='TransformingOperators.swift'/>
+        <page name='MoreTransformingOperators'/>
+        <page name='TelephoneChallenge'/>
     </pages>
 </playground>

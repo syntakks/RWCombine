@@ -57,3 +57,30 @@ example(of: "Map") {
     .sink{ print($0) }
     .store(in: &subscriptions)
 }
+
+// MARK: - Replace Nil
+/// What happens when you encounter a nil in your upstream values?
+/// replaceNil(value) allows you to specify a default value when you encounter a nil in the set
+
+example(of: "Replace Nil") {
+  let test = ["A", nil, "B"].publisher
+  
+  ["A", nil, "B"].publisher
+    .replaceNil(with: "-")
+    .map { $0! } // We know we are replacing any nil values so we can map this optional to string before the subscription.
+    .sink { print($0) }
+    .store(in: &subscriptions)
+}
+
+// MARK: - Replace Empty
+/// Replace empty inserts a value if the publisher ends up completing without emitting any values.
+
+example(of: "Replace Empty") {
+  let empty = Empty<Int, Never>()
+  
+  empty
+    .replaceEmpty(with: 1)
+    .sink { print($0) }
+    .store(in: &subscriptions)
+}
+
