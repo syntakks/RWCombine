@@ -6,5 +6,12 @@
         <page name='TransformingOperators.swift'/>
         <page name='MoreTransformingOperators'/>
         <page name='TelephoneChallenge'/>
+        <page name='FilteringOperators'/>
+        <page name='MoreFilteringOperators'/>
+        <page name='ChallengeFilterAllTheTHings'/>
+        <page name='CombiningOperators'/>
+        <page name='ChallengePrependAppend'/>
+        <page name='MoreCombiningOperators'/>
+        <page name='ChallengeAdvancedCombining'/>
     </pages>
 </playground>
