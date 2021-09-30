@@ -13,5 +13,9 @@
         <page name='ChallengePrependAppend'/>
         <page name='MoreCombiningOperators'/>
         <page name='ChallengeAdvancedCombining'/>
+        <page name='Delay'/>
+        <page name='Collect'/>
+        <page name='Debounce'/>
+        <page name='Throttle'/>
     </pages>
 </playground>
